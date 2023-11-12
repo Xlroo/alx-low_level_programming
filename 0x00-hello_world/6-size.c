@@ -7,9 +7,9 @@
 int main(void)
 {
 	int charSize = sizeof(char);
-	int intSIze = sizeof(int);
+	int intSize = sizeof(int);
 	int longIntSize = sizeof(long int);
-	int longLOngINtSize = sizeof(long longint);
+	int longLOngINtSize = sizeof(long long int);
 	int floatSize = sizeof(float);
 
 	printf("Size of a char: %d byte(s)\n", charSize);
