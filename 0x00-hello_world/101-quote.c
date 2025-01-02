@@ -1,7 +1,5 @@
 #include <stdio.h>
 #include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
 #include <string.h>
 
 /**
@@ -17,7 +15,10 @@ int main(void)
     char *buffer = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
 
     int bytesWritten = write(2, buffer, strlen(buffer));
-
-
-    return(0);
+    if (bytesWritten == -1)
+    {
+	    return(1);
+    }
+    
+    return(1);
 }
